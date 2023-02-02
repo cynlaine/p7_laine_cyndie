@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from "./App"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles/pages/index.css";
+import "./assets/fonts.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-        <Header />
-        <App />
-        <Footer />
-    </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Header />
+            <App />
+            <Footer />
+        </BrowserRouter>
+    </React.StrictMode>
 );

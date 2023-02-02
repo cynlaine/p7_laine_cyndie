@@ -1,0 +1,24 @@
+header {
+    margin: auto;
+    max-width: 1300px;
+    padding: 2.5em 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links {
+    margin-left: 2.5em;
+    color: #ff6060;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav_links:hover {
+    text-decoration: underline;
+}
