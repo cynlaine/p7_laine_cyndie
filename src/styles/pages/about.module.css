@@ -1,0 +1,12 @@
+main {
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 7em;
+    flex-direction: column;
+    position: static;
+    bottom: 0;
+}

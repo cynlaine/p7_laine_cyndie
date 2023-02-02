@@ -7,7 +7,7 @@ function Card(props) {
             className={styles.container}
             style={{ backgroundImage: `url(${props.cover})` }}
         >
-            <Link to={`./rentals/${props.id}`}>
+            <Link to={`./rental/${props.id}`}>
                 <h3>{props.title}</h3>
             </Link>
         </article>

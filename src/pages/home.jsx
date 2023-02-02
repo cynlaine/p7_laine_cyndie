@@ -1,7 +1,7 @@
 import Banner from "../components/banner";
 import styles from "../styles/pages/home.module.css";
 import banner from "../assets/banner.png";
-import data from "../datas/logements";
+import datas from "../datas/logements";
 import Card from "../components/card";
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
             </Banner>
             <div className={styles.gallery}>
                 <div className={styles.cards_grid}>
-                    {data.map((rental) => (
+                    {datas.map((rental) => (
                         <Card
                             key={rental.id}
                             cover={rental.cover}

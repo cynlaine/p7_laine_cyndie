@@ -1,7 +1,7 @@
-import Error from "./components/error";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Rentals from "./pages/rentals";
+import Error from "./error";
+import Home from "../pages/home";
+import About from "../pages/about";
+import Rental from "../pages/rental";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/rentals/:id" element={<Rentals />} />
+                <Route path="/rental/:id" element={<Rental />} />
                 <Route path="/*" element={<Error />} />
             </Routes>
         </div>
