@@ -7,7 +7,7 @@ import Card from "../components/card";
 function Home() {
     return (
         <main>
-            <Banner image={banner} alt='paysage'>
+            <Banner image={banner} alt="Un paysage côtier">
                 <h2>Chez vous, partout et ailleurs</h2>
             </Banner>
             <div className={styles.gallery}>
