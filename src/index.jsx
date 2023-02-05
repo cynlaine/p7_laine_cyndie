@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/app";
-import "./styles/pages/index.css";
-import "./assets/fonts.css";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import App from "./components/App/App";
+import "./index.css";
+import Header from "./layout/Header/Header";
+import Footer from "./layout/Footer/Footer";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -13,7 +12,9 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Header />
-            <App />
+            <main>
+                <App />
+            </main>
             <Footer />
         </BrowserRouter>
     </React.StrictMode>

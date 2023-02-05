@@ -1,8 +1,8 @@
-import styles from "../styles/components/banner.module.css";
+import "../../sass/components/_banner.scss";
 
 function Banner(props) {
     return (
-        <div className={styles.container}>
+        <div className="banner">
             <img src={props.image} alt={props.alt} />
             {props.children}
         </div>

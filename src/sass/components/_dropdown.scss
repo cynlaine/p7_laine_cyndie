@@ -1,0 +1,43 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6060;
+        height: 47px;
+        border-radius: 5px;
+        padding: 0 1em;
+        font-weight: 500;
+        font-size: 1.5em;
+        color: white;
+
+        button {
+            background: none;
+            border: none;
+            height: 47px;
+            width: 47px;
+        }
+    }
+}
+
+.arrow_up {
+    transform: rotate(180deg);
+}
+
+.content {
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    color: #ff6060;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 1.5em 1em 1em 1em;
+
+    &--closed {
+        display: none;
+    }
+}

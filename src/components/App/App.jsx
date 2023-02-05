@@ -1,20 +1,20 @@
-import Error from "./error";
-import Home from "../pages/home";
-import About from "../pages/about";
-import Rental from "../pages/rental";
+import Error from "../../pages/Error/Error";
+import Home from "../../pages/Home/Home";
+import About from "../../pages/About/About";
+import Rental from "../../pages/Rental/Rental";
 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
     return (
-        <div>
+        <>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/rental/:id" element={<Rental />} />
                 <Route path="/*" element={<Error />} />
             </Routes>
-        </div>
+        </>
     );
 }
 

@@ -1,17 +1,18 @@
-import Banner from "../components/banner";
-import styles from "../styles/pages/home.module.css";
-import banner from "../assets/banner.png";
-import datas from "../datas/logements";
-import Card from "../components/card";
+import React from "react";
+import "../../sass/pages/_home.scss";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/Card";
+import banner from "../../assets//images/banner.png";
+import datas from "../../datas/logements";
 
 function Home() {
     return (
-        <main>
+        <>
             <Banner image={banner} alt="Un paysage côtier">
                 <h2>Chez vous, partout et ailleurs</h2>
             </Banner>
-            <div className={styles.gallery}>
-                <div className={styles.cards_grid}>
+            <section className="gallery">
+                <div className="gallery_grid">
                     {datas.map((rental) => (
                         <Card
                             key={rental.id}
@@ -21,8 +22,8 @@ function Home() {
                         />
                     ))}
                 </div>
-            </div>
-        </main>
+            </section>
+        </>
     );
 }
 

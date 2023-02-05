@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
-import styles from "../styles/components/header.module.css";
+import logo from "../../assets/logos/logo.png";
+import "../../sass/layout/_header.scss";
 
 function Header() {
     return (
@@ -8,11 +8,11 @@ function Header() {
             <Link to="/">
                 <img src={logo} alt="Kasa" />
             </Link>
-            <nav className={styles.nav_container}>
-                <Link to="/" className={styles.nav_links}>
+            <nav className="nav_container">
+                <Link to="/" className="nav_links">
                     Accueil
                 </Link>
-                <Link to="/about" className={styles.nav_links}>
+                <Link to="/about" className="nav_links">
                     A Propos
                 </Link>
             </nav>

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // border: 1px red solid;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 500;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}

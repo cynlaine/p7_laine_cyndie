@@ -1,4 +1,4 @@
-import styles from "../styles/pages/rental.module.css";
+import "../../sass/pages/_rental.scss";
 
 function Rentals() {
     return <div>Rentals</div>;

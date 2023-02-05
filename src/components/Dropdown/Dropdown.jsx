@@ -1,34 +1,30 @@
 import { useState } from "react";
-import styles from "../styles/components/dropdown.module.css";
-import arrow from "../assets/arrow.png";
+import "../../sass/components/_dropdown.scss";
+import arrow_icon from "../../assets/icons/arrow_icon.png";
 
 function Dropdown(props) {
     const [isOpen, setOpen] = useState(false);
     return (
-        <div className={styles.container}>
-            <div className={styles.header}>
+        <div className="dropdown">
+            <div className="dropdown_header">
                 {props.title}
                 <div>
                     {isOpen ? (
                         <button onClick={() => setOpen(false)}>
                             <img
-                                className={styles.arrow_up}
-                                src={arrow}
+                                className="arrow_up"
+                                src={arrow_icon}
                                 alt="bouton"
                             />
                         </button>
                     ) : (
                         <button onClick={() => setOpen(true)}>
-                            <img src={arrow} alt="bouton" />
+                            <img src={arrow_icon} alt="bouton" />
                         </button>
                     )}
                 </div>
             </div>
-            <div
-                className={
-                    isOpen ? `${styles.content}` : `${styles.content_closed}`
-                }
-            >
+            <div className={isOpen ? "content" : "content--closed"}>
                 {props.children}
             </div>
         </div>
