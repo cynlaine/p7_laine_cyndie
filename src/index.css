@@ -399,15 +399,21 @@ main {
   font-size: 1.5em;
   color: white;
 }
-.dropdown_header button {
+.dropdown button {
   background: none;
   border: none;
   height: 47px;
   width: 47px;
 }
 
-.arrow_up {
-  transform: rotate(180deg);
+.arrow {
+  transition: transform 0.4s;
+}
+.arrow--down {
+  transform: rotate(0deg);
+}
+.arrow--up {
+  transform: rotate(-180deg);
 }
 
 .content {
@@ -417,8 +423,10 @@ main {
   font-weight: 400;
   font-size: 1.5em;
   padding: 1.5em 1em 1em 1em;
+  overflow: hidden;
+  display: block;
 }
-.content--closed {
+.content--hidden {
   display: none;
 }
 

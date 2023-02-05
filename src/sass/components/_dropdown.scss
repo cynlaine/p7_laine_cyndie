@@ -15,18 +15,24 @@
         font-weight: 500;
         font-size: 1.5em;
         color: white;
-
-        button {
-            background: none;
-            border: none;
-            height: 47px;
-            width: 47px;
-        }
+    }
+    button {
+        background: none;
+        border: none;
+        height: 47px;
+        width: 47px;
     }
 }
 
-.arrow_up {
-    transform: rotate(180deg);
+.arrow {
+    transition: transform 0.4s;
+    &--down {
+        transform: rotate(0deg);
+    }
+
+    &--up {
+        transform: rotate(-180deg);
+    }
 }
 
 .content {
@@ -36,8 +42,9 @@
     font-weight: 400;
     font-size: 1.5em;
     padding: 1.5em 1em 1em 1em;
-
-    &--closed {
+    overflow: hidden;
+    display: block;
+    &--hidden {
         display: none;
     }
 }

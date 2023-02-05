@@ -12,19 +12,23 @@ function Dropdown(props) {
                     {isOpen ? (
                         <button onClick={() => setOpen(false)}>
                             <img
-                                className="arrow_up"
+                                className="arrow arrow--up"
                                 src={arrow_icon}
                                 alt="bouton"
                             />
                         </button>
                     ) : (
                         <button onClick={() => setOpen(true)}>
-                            <img src={arrow_icon} alt="bouton" />
+                            <img
+                                className="arrow arrow--down"
+                                src={arrow_icon}
+                                alt="bouton"
+                            />
                         </button>
                     )}
                 </div>
             </div>
-            <div className={isOpen ? "content" : "content--closed"}>
+            <div className={isOpen ? "content" : "content--hidden"}>
                 {props.children}
             </div>
         </div>
