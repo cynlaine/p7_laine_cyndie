@@ -5,17 +5,27 @@
     // border: 1px red solid;
 }
 
+html,
 body {
+    height: 100%;
+    width: 100%;
     font-family: Montserrat;
     font-weight: 500;
-    margin: auto;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 1300px;
     padding: 0 30px;
     margin: auto;
+    flex: auto;
+    max-width: 1300px;
+    width: 100%;
 }

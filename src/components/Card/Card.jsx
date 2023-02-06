@@ -5,10 +5,10 @@ function Card(props) {
     return (
         <article
             className="card"
-            style={{ backgroundImage: `url(${props.cover})` }}
+            style={{ backgroundImage: `url(${props.data.cover})` }}
         >
-            <Link to={`./rental/${props.id}`}>
-                <h3>{props.title}</h3>
+            <Link to={`./rental/${props.data.id}`}>
+                <h3>{props.data.title}</h3>
             </Link>
         </article>
     );

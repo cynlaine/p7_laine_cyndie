@@ -1,9 +1,16 @@
-function Footer() {
+import { Link } from "react-router-dom";
+import "../../sass/pages/_error.scss";
+
+function Error() {
     return (
-        <div>
-            <h1>Error !</h1>
-        </div>
+        <section className="error">
+            <h2 className="error_title">404</h2>
+            <p>Oups! La page que vous demandez n'existe pas.</p>
+            <Link to="/" className="error_backlink">
+                Retourner sur la page d'accueil
+            </Link>
+        </section>
     );
 }
 
-export default Footer;
+export default Error;

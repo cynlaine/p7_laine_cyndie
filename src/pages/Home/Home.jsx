@@ -12,16 +12,9 @@ function Home() {
                 <h2>Chez vous, partout et ailleurs</h2>
             </Banner>
             <section className="gallery">
-                <div className="gallery_grid">
-                    {datas.map((rental) => (
-                        <Card
-                            key={rental.id}
-                            cover={rental.cover}
-                            title={rental.title}
-                            id={rental.id}
-                        />
-                    ))}
-                </div>
+                {datas.map((data) => (
+                    <Card data={data} />
+                ))}
             </section>
         </>
     );
