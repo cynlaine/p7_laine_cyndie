@@ -504,9 +504,8 @@ footer {
 }
 
 .slide {
-  width: 100%;
-  max-width: 1240px;
-  height: 415px;
+  width: inherit;
+  height: inherit;
   position: absolute;
 }
 .slide img {
@@ -527,23 +526,23 @@ footer {
 .btn {
   position: absolute;
   background: none;
-  padding: 10px;
+  padding: 0.625rem;
   border: none;
-  z-index: 10px;
+  z-index: 0.625rem;
   cursor: pointer;
 }
 .btn img {
-  height: 47px;
+  height: 3rem;
 }
 .btn__prev {
-  top: 45%;
+  top: 40%;
   left: 0;
 }
 .btn__prev img {
   transform: rotate(90deg);
 }
 .btn__next {
-  top: 45%;
+  top: 40%;
   right: 0;
 }
 .btn__next img {
