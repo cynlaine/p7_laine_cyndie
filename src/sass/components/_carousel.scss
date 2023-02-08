@@ -1,0 +1,55 @@
+.carousel {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    position: absolute;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.counter {
+    position: absolute;
+    color: white;
+    font-size: 1.125rem;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+.btn {
+    position: absolute;
+    background: none;
+    padding: 10px;
+    border: none;
+    z-index: 10px;
+    cursor: pointer;
+    img {
+        height: 47px;
+    }
+    &__prev {
+        top: 45%;
+        left: 0;
+        img {
+            transform: rotate(90deg);
+        }
+    }
+    &__next {
+        top: 45%;
+        right: 0;
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+}

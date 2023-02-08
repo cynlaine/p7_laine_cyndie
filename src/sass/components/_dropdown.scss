@@ -11,18 +11,18 @@
         align-items: center;
         justify-content: space-between;
         background-color: #ff6060;
-        height: 47px;
+        height: 3rem;
         border-radius: 5px;
         padding: 0 1rem;
         font-weight: 500;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: white;
     }
     button {
         background: none;
         border: none;
-        height: 47px;
-        width: 47px;
+        height: 3rem;
+        width: 3rem;
     }
 }
 
@@ -42,11 +42,10 @@
     border-radius: 0 0 5px 5px;
     color: #ff6060;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 1.5rem 0.5rem 0.5rem 1rem;
     overflow: hidden;
     display: block;
-    line-height: 1.5em;
     &--hidden {
         display: none;
     }

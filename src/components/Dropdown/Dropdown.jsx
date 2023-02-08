@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../../sass/components/_dropdown.scss";
-import arrow_icon from "../../assets/icons/arrow_icon.png";
+import "../../sass/main.scss";
+import arrow_icon from "../../assets/icons/arrow_icon.svg";
 
 function Dropdown(props) {
     const [isOpen, setOpen] = useState(false);

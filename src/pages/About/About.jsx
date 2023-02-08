@@ -1,4 +1,4 @@
-import "../../sass/pages/_about.scss";
+import "../../sass/main.scss";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Banner from "../../components/Banner/Banner";
 import image from "../../assets/images/banner_about.png";

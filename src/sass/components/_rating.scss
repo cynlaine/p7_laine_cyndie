@@ -1,0 +1,6 @@
+.star {
+    color: $primary-color;
+    &--empty {
+        color: $secondary-color;
+    }
+}

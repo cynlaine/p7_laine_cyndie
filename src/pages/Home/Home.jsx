@@ -1,5 +1,4 @@
-import React from "react";
-import "../../sass/pages/_home.scss";
+import "../../sass/main.scss";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import banner from "../../assets//images/banner.png";
@@ -13,7 +12,7 @@ function Home() {
             </Banner>
             <section className="gallery">
                 {datas.map((data) => (
-                    <Card data={data} />
+                    <Card key={data.id} data={data} />
                 ))}
             </section>
         </>

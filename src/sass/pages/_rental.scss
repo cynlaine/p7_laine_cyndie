@@ -1,0 +1,87 @@
+.rental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: $primary-color;
+    margin-bottom: 10rem;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 2.25rem;
+            margin-bottom: 0.625rem;
+        }
+        &__location {
+            font-size: 1.125rem;
+            margin-bottom: 1.25rem;
+        }
+        &__tags {
+            ul {
+                list-style-type: none;
+                display: flex;
+                li {
+                    background-color: $primary-color;
+                    color: white;
+                    font-size: 0.875rem;
+                    padding: 0.3125rem 2.5rem;
+                    border-radius: 0.625rem;
+                    margin-right: 0.625rem;
+                }
+            }
+        }
+        &__host {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 11.25rem;
+            &__name {
+                margin-right: 0.625rem;
+                font-size: 1.125em;
+                text-align: right;
+                line-height: 1.5em;
+                overflow-wrap: break-word;
+            }
+            &__picture {
+                border-radius: 50%;
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+        &__rating {
+            font-size: 2.625em;
+            margin: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+        margin: 1.25rem 0 2.5rem 0;
+        height: 100%;
+        & .dropdown {
+            max-width: 36.25rem;
+        }
+        & .dropdown_header {
+            border-radius: 0.625rem;
+        }
+        & .dropdown_header,
+        .content {
+            font-size: 1.125rem;
+            & ul {
+                list-style-type: none;
+            }
+        }
+    }
+}

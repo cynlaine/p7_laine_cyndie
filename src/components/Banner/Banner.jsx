@@ -1,4 +1,4 @@
-import "../../sass/components/_banner.scss";
+import "../../sass/main.scss";
 
 function Banner(props) {
     return (
