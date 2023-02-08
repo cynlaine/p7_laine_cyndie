@@ -32,11 +32,11 @@ function Carousel({ pictures }) {
                     <button className="btn btn__prev" onClick={prevClick}>
                         <img src={arrow_icon} alt="" />
                     </button>
+                    <div className="counter">
+                        {isActive + 1}/{pictures.length}
+                    </div>
                 </>
             ) : null}
-            <div className="counter">
-                {isActive + 1}/{pictures.length}
-            </div>
         </section>
     );
 }
