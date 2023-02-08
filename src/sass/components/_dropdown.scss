@@ -17,17 +17,19 @@
         font-weight: 500;
         font-size: 1.5rem;
         color: white;
+        z-index: 1;
     }
     button {
         background: none;
         border: none;
         height: 3rem;
         width: 3rem;
+        cursor: pointer;
     }
 }
 
 .arrow {
-    transition: transform 0.4s;
+    transition: transform 0.4s ease-in-out;
     &--down {
         transform: rotate(0deg);
     }
@@ -38,15 +40,20 @@
 }
 
 .content {
+    max-width: inherit;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
+    margin-top: -5px;
     color: #ff6060;
     font-weight: 400;
     font-size: 1.5rem;
     padding: 1.5rem 0.5rem 0.5rem 1rem;
     overflow: hidden;
-    display: block;
+    transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
     &--hidden {
-        display: none;
+        height: 0;
+        opacity: 0;
+        padding: 0 1rem 0 1rem;
+        transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
     }
 }

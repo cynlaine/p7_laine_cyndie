@@ -72,16 +72,17 @@
         height: 100%;
         & .dropdown {
             max-width: 36.25rem;
+            .content {
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+                & ul {
+                    list-style-type: none;
+                }
+            }
         }
         & .dropdown_header {
-            border-radius: 0.625rem;
-        }
-        & .dropdown_header,
-        .content {
+            border-radius: 10px;
             font-size: 1.125rem;
-            & ul {
-                list-style-type: none;
-            }
         }
     }
 }
