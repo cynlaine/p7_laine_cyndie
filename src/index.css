@@ -790,16 +790,32 @@ footer .footer__text {
 }
 .error_title {
   font-size: 18rem;
+  font-weight: 700;
   margin: 5.5rem 0 2rem 0;
+}
+@media (max-width: 767px) {
+  .error_title {
+    font-size: 6rem;
+  }
 }
 .error p {
   font-size: 2.25rem;
+}
+@media (max-width: 767px) {
+  .error p {
+    font-size: 1.125rem;
+  }
 }
 .error_backlink {
   display: block;
   color: #ff6060;
   font-size: 1.125rem;
   margin: 11rem 0;
+}
+@media (max-width: 767px) {
+  .error_backlink {
+    font-size: 0.875rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

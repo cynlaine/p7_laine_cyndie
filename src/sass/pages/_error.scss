@@ -6,11 +6,18 @@
 
     &_title {
         font-size: 18rem;
+        font-weight: 700;
         margin: 5.5rem 0 2rem 0;
+        @include media-query(small) {
+            font-size: 6rem;
+        }
     }
 
     p {
         font-size: 2.25rem;
+        @include media-query(small) {
+            font-size: 1.125rem;
+        }
     }
 
     &_backlink {
@@ -18,5 +25,8 @@
         color: $primary-color;
         font-size: 1.125rem;
         margin: 11rem 0;
+        @include media-query(small) {
+            font-size: 0.875rem;
+        }
     }
 }
