@@ -11,6 +11,20 @@
     align-items: center;
 }
 
-@mixin flex-column {
-    display: flex;
+@mixin media-query($break-point) {
+    @if $break-point== large {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    }
+    @if $break-point== medium {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+    @if $break-point== small {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
 }
