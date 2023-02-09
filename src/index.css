@@ -342,7 +342,7 @@ main {
 }
 @media (max-width: 767px) {
   main {
-    padding: 1.25rem;
+    padding: 0 1.25rem;
   }
 }
 
@@ -432,13 +432,17 @@ footer .footer__text {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media (max-width: 767px) {
-  .banner {
+  .banner--home {
     height: 110px;
     border-radius: 10px;
   }
 }
+@media (max-width: 767px) {
+  .banner--about {
+    border-radius: 10px;
+  }
+}
 .banner img {
-  width: 100%;
   position: absolute;
   object-fit: cover;
   filter: brightness(70%);
@@ -494,7 +498,6 @@ footer .footer__text {
 .dropdown {
   max-width: 1024px;
   width: 100%;
-  margin: 0.5em 0;
 }
 .dropdown_header {
   display: flex;
@@ -505,11 +508,18 @@ footer .footer__text {
   background-color: #ff6060;
   height: 3rem;
   border-radius: 5px;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
   font-weight: 500;
   font-size: 1.5rem;
   color: white;
-  z-index: 1;
+}
+@media (max-width: 767px) {
+  .dropdown_header {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0 7px 0 13px;
+  }
 }
 .dropdown button {
   background: none;
@@ -518,9 +528,20 @@ footer .footer__text {
   width: 3rem;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .dropdown button {
+    height: 18px;
+    width: 18px;
+  }
+}
 
 .arrow {
   transition: transform 0.4s ease-in-out;
+}
+@media (max-width: 767px) {
+  .arrow {
+    width: 15px;
+  }
 }
 .arrow--down {
   transform: rotate(0deg);
@@ -533,19 +554,33 @@ footer .footer__text {
   max-width: inherit;
   background-color: #f6f6f6;
   border-radius: 0 0 5px 5px;
-  margin-top: -5px;
   color: #ff6060;
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 1.5rem 1rem 1rem 1rem;
+  line-height: 2.125rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   overflow: hidden;
   transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+@media (max-width: 767px) {
+  .content {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
+  }
 }
 .content--hidden {
   height: 0;
   opacity: 0;
   padding: 0 1rem 0 1rem;
   transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+@media (max-width: 767px) {
+  .content--hidden {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    padding: 0rem 0.4375rem 0rem 0.8125rem;
+  }
 }
 
 .star {
@@ -619,7 +654,7 @@ footer .footer__text {
   background-color: #f7f7f7;
   border-radius: 25px;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2.6875rem;
   flex-wrap: wrap;
   padding: 3.125rem;
   gap: 3.125rem 3.75rem;
@@ -645,9 +680,21 @@ footer .footer__text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding-bottom: 11rem;
   width: 100%;
+  padding: 1.875rem 0 11rem 0;
+  gap: 1.875rem;
+}
+@media (max-width: 767px) {
+  .about {
+    padding-top: 1.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_banner {
+    height: 223px;
+    border-radius: 10px;
+  }
 }
 
 .rental {

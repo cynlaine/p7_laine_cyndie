@@ -1,6 +1,16 @@
 .about {
     @include center-element-column;
-    gap: 1rem;
-    padding-bottom: 11rem;
     width: 100%;
+    padding: 1.875rem 0 11rem 0;
+    gap: 1.875rem;
+    @include media-query(small) {
+        padding-top: 1.25rem;
+    }
+}
+
+.about_banner {
+    @include media-query(small) {
+        height: 223px;
+        border-radius: 10px;
+    }
 }

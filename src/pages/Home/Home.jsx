@@ -6,7 +6,11 @@ import banner from "../../assets//images/banner.png";
 function Home(props) {
     return (
         <>
-            <Banner image={banner} alt="Un paysage côtier">
+            <Banner
+                class="banner banner--home"
+                image={banner}
+                alt="Un paysage côtier"
+            >
                 <h2>Chez vous, partout et ailleurs</h2>
             </Banner>
             <section className="gallery">

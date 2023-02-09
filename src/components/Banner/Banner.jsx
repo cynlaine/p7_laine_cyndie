@@ -2,7 +2,7 @@ import "../../sass/main.scss";
 
 function Banner(props) {
     return (
-        <div className="banner">
+        <div className={props.class}>
             <img src={props.image} alt={props.alt} />
             {props.children}
         </div>

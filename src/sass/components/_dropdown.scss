@@ -1,7 +1,6 @@
 .dropdown {
     max-width: 1024px;
     width: 100%;
-    margin: 0.5em 0;
 
     &_header {
         @include center-element;
@@ -10,11 +9,16 @@
         background-color: #ff6060;
         height: 3rem;
         border-radius: 5px;
-        padding: 0 1rem;
+        padding: 0 1.25rem;
         font-weight: 500;
         font-size: 1.5rem;
         color: white;
-        z-index: 1;
+        @include media-query(small) {
+            height: 30px;
+            border-radius: 5px;
+            font-size: 13px;
+            padding: 0 7px 0 13px;
+        }
     }
     button {
         background: none;
@@ -22,11 +26,18 @@
         height: 3rem;
         width: 3rem;
         cursor: pointer;
+        @include media-query(small) {
+            height: 18px;
+            width: 18px;
+        }
     }
 }
 
 .arrow {
     transition: transform 0.4s ease-in-out;
+    @include media-query(small) {
+        width: 15px;
+    }
     &--down {
         transform: rotate(0deg);
     }
@@ -40,17 +51,27 @@
     max-width: inherit;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
-    margin-top: -5px;
     color: #ff6060;
     font-weight: 400;
     font-size: 1.5rem;
-    padding: 1.5rem 1rem 1rem 1rem;
+    line-height: 2.125rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     overflow: hidden;
     transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    @include media-query(small) {
+        font-size: 0.75rem;
+        line-height: 1.0625rem;
+        padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
+    }
     &--hidden {
         height: 0;
         opacity: 0;
         padding: 0 1rem 0 1rem;
         transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        @include media-query(small) {
+            font-size: 0.75rem;
+            line-height: 1.0625rem;
+            padding: 0rem 0.4375rem 0rem 0.8125rem;
+        }
     }
 }

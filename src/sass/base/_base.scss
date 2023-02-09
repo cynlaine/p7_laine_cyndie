@@ -29,7 +29,7 @@ main {
     max-width: 1300px;
     width: 100%;
     @include media-query(small) {
-        padding: 1.25rem;
+        padding: 0 1.25rem;
     }
 }
 

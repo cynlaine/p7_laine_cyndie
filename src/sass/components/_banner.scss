@@ -6,13 +6,19 @@
     overflow: hidden;
     position: relative;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    @include media-query(small) {
-        height: 110px;
-        border-radius: 10px;
+    &--home {
+        @include media-query(small) {
+            height: 110px;
+            border-radius: 10px;
+        }
+    }
+    &--about {
+        @include media-query(small) {
+            border-radius: 10px;
+        }
     }
 
     img {
-        width: 100%;
         position: absolute;
         object-fit: cover;
         filter: brightness(70%);

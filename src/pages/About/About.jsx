@@ -6,7 +6,11 @@ import image from "../../assets/images/banner_about.png";
 function About() {
     return (
         <>
-            <Banner image={image} />
+            <Banner
+                class="banner banner--about"
+                image={image}
+                alt="Une forêt"
+            />
             <section className="about">
                 <Dropdown title="Fiabilité">
                     <span>
