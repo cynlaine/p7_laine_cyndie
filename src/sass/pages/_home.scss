@@ -1,16 +1,16 @@
 .gallery {
     @include center-element;
+    justify-content: space-evenly;
     background-color: #f7f7f7;
     border-radius: 25px;
-    justify-content: space-evenly;
     width: 100%;
     margin: 2rem 0;
     flex-wrap: wrap;
-    padding: 2.5rem;
-    gap: 3rem;
+    padding: 3.125rem;
+    gap: 3.125rem 3.75rem;
     @include media-query(medium) {
-        padding: 1.5rem 1rem;
-        gap: 1.25rem;
+        padding: 3.125rem;
+        gap: 3.125rem 3.75rem;
         margin: 1.25rem;
     }
     @include media-query(small) {
