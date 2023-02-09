@@ -5,6 +5,14 @@
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-size: cover;
+    @include media-query(medium) {
+        width: 300px;
+        height: 300px;
+    }
+    @include media-query(small) {
+        width: 100%;
+        height: 255px;
+    }
 
     a {
         width: 100%;

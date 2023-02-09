@@ -4,12 +4,17 @@ footer {
     height: 10rem;
     flex-shrink: 0;
     background-color: black;
-}
-
-.copyright_footer {
-    color: white;
-}
-
-.logo {
-    margin: 1rem;
+    .footer__logo {
+        margin: 1rem;
+    }
+    .footer__text {
+        color: white;
+        font-size: 1.5rem;
+        @include media-query(medium) {
+            font-size: 0.75rem;
+        }
+        @include media-query(small) {
+            font-size: 0.75rem;
+        }
+    }
 }

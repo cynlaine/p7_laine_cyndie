@@ -3,13 +3,14 @@ import logo from "../../assets/logos/logo_white.png";
 import "../../sass/main.scss";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <Link to="/">
-                <img src={logo} alt="Kasa" className="logo" />
+                <img src={logo} alt="Kasa" className="footer__logo" />
             </Link>
-            <div className="copyright_footer">
-                © 2020 Kasa. All rights reserved
+            <div className="footer__text">
+                &#169; {currentYear} Kasa. All rights reserved
             </div>
         </footer>
     );

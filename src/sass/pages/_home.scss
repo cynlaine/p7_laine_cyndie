@@ -1,11 +1,22 @@
 .gallery {
+    @include center-element;
     background-color: #f7f7f7;
     border-radius: 25px;
-    @include center-element;
     justify-content: space-evenly;
     width: 100%;
     margin: 2rem 0;
     flex-wrap: wrap;
     padding: 2.5rem;
     gap: 3rem;
+    @include media-query(medium) {
+        padding: 1.5rem 1rem;
+        gap: 1.25rem;
+        margin: 1.25rem;
+    }
+    @include media-query(small) {
+        background: none;
+        padding: 0;
+        gap: 1.25rem;
+        margin: 1.25rem;
+    }
 }

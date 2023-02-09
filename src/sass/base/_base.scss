@@ -28,6 +28,9 @@ main {
     flex: auto;
     max-width: 1300px;
     width: 100%;
+    @include media-query(small) {
+        padding: 1.25rem;
+    }
 }
 
 ul {
