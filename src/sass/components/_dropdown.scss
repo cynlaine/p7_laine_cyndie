@@ -1,14 +1,11 @@
 .dropdown {
-    display: flex;
-    flex-direction: column;
     max-width: 1024px;
     width: 100%;
     margin: 0.5em 0;
 
     &_header {
-        display: flex;
+        @include center-element;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         background-color: #ff6060;
         height: 3rem;

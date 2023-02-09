@@ -27,7 +27,6 @@
         }
         &__tags {
             ul {
-                list-style-type: none;
                 display: flex;
                 li {
                     background-color: $primary-color;
@@ -40,9 +39,8 @@
             }
         }
         &__host {
-            display: flex;
+            @include center-element;
             flex-direction: row;
-            align-items: center;
             width: 11.25rem;
             &__name {
                 margin-right: 0.625rem;
@@ -75,9 +73,6 @@
             .content {
                 font-size: 1.125rem;
                 line-height: 1.625rem;
-                & ul {
-                    list-style-type: none;
-                }
             }
         }
         & .dropdown_header {
