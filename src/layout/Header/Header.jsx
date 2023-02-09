@@ -4,9 +4,9 @@ import "../../sass/main.scss";
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <Link to="/">
-                <img className="header-logo" src={logo} alt="Kasa" />
+                <img className="header__logo" src={logo} alt="Kasa" />
             </Link>
             <nav className="nav">
                 <Link to="/" className="nav__links">
