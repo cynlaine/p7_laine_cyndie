@@ -6,6 +6,10 @@
     margin-bottom: 2rem;
     border-radius: 25px;
     overflow: hidden;
+    @include media-query(small) {
+        height: 255px;
+        border-radius: 10px;
+    }
 }
 
 .slide {
@@ -26,6 +30,9 @@
     left: 50%;
     bottom: 0;
     margin-bottom: 1rem;
+    @include media-query(small) {
+        display: none;
+    }
 }
 .btn {
     position: absolute;
@@ -34,8 +41,14 @@
     border: none;
     z-index: 0.625rem;
     cursor: pointer;
+    @include media-query(small) {
+        padding: 7px;
+    }
     img {
         height: 3rem;
+        @include media-query(small) {
+            height: 0.75rem;
+        }
     }
     &__prev {
         top: 40%;

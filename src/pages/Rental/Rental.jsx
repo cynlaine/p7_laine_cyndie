@@ -16,7 +16,7 @@ function Rentals(props) {
             <Carousel pictures={data.pictures} />
             <section className="rental">
                 <header className="rental__header">
-                    <div className="rental__header__wrap">
+                    <div className="rental__header__title-wrap">
                         <h2 className="rental__header__title">{data.title}</h2>
                         <p className="rental__header__location">
                             {data.location}
@@ -29,7 +29,7 @@ function Rentals(props) {
                             </ul>
                         </div>
                     </div>
-                    <div className="rental__header__wrap">
+                    <div className="rental__header__host-wrap">
                         <div className="rental__header__host">
                             <p className="rental__header__host__name">
                                 {data.host.name}
