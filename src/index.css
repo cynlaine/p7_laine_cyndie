@@ -832,12 +832,14 @@ footer .footer__text {
   }
 }
 .rental__header__rating {
-  font-size: 2.625em;
+  display: flex;
+  font-size: 2.625rem;
   margin: 0;
+  gap: 2px;
 }
 @media (max-width: 767px) {
   .rental__header__rating {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 .rental__content {
@@ -852,6 +854,7 @@ footer .footer__text {
   .rental__content {
     flex-direction: column;
     gap: 1.25rem;
+    margin: 0 0 2.5rem 0;
   }
 }
 .rental__content .dropdown {
