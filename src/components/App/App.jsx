@@ -14,7 +14,6 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/rental/:id" element={<Rental datas={datas} />} />
                 <Route path="/*" element={<Error />} />
-                <Route path="/404" element={<Error />} />
             </Routes>
         </>
     );

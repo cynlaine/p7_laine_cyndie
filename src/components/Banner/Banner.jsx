@@ -1,5 +1,3 @@
-import "../../sass/main.scss";
-
 function Banner(props) {
     return (
         <div className={props.class}>

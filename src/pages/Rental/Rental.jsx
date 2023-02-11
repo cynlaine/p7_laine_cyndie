@@ -1,4 +1,3 @@
-import "../../sass/main.scss";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Rating from "../../components/Rating/Rating";
 import Carousel from "../../components/Carousel/Carousel";
@@ -46,8 +45,10 @@ function Rentals(props) {
                     </div>
                 </header>
                 <div className="rental__content">
-                    <Dropdown title="Description">{data.description}</Dropdown>
-                    <Dropdown title="Equipements">
+                    <Dropdown title="Description" content="...">
+                        {data.description}
+                    </Dropdown>
+                    <Dropdown title="Equipements" content="...">
                         <ul>
                             {data.equipments.map((equipment, index) => (
                                 <li key={`${equipment}-${index}`}>

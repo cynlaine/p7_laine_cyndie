@@ -1,5 +1,3 @@
-import "../../sass/main.scss";
-
 function Rating(props) {
     const value = props.value;
     const range = [1, 2, 3, 4, 5];

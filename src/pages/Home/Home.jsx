@@ -1,4 +1,3 @@
-import "../../sass/main.scss";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import banner from "../../assets//images/banner.png";

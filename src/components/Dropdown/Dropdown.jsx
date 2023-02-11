@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../sass/main.scss";
 import arrow_icon from "../../assets/icons/arrow_icon.svg";
 
 function Dropdown(props) {
