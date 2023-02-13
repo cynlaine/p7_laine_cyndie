@@ -98,6 +98,16 @@
             @include media-query(small) {
                 max-width: 100%;
             }
+            &_header {
+                border-radius: 10px;
+                font-size: 1.125rem;
+                @include media-query(small) {
+                    height: 30px;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    padding: 0 7px 0 13px;
+                }
+            }
             .content {
                 font-size: 1.125rem;
                 line-height: 1.625rem;
@@ -106,16 +116,6 @@
                     line-height: 1.0625rem;
                     padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
                 }
-            }
-        }
-        & .dropdown_header {
-            border-radius: 10px;
-            font-size: 1.125rem;
-            @include media-query(small) {
-                height: 30px;
-                border-radius: 5px;
-                font-size: 13px;
-                padding: 0 7px 0 13px;
             }
         }
     }
