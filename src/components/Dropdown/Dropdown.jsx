@@ -36,6 +36,7 @@ export default function Dropdown(props) {
             ) : (
                 <div className={isOpen ? "content" : "content--hidden"}>
                     {props.content}
+                    {props.children}
                 </div>
             )}
         </div>
