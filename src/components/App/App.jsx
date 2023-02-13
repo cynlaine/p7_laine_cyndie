@@ -6,7 +6,7 @@ import datas from "../../datas/logements";
 
 import { Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
     return (
         <>
             <Routes>
@@ -18,5 +18,3 @@ function App() {
         </>
     );
 }
-
-export default App;

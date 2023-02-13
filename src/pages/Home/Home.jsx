@@ -2,7 +2,7 @@ import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import banner from "../../assets//images/banner.png";
 
-function Home(props) {
+export default function Home(props) {
     return (
         <>
             <Banner
@@ -20,5 +20,3 @@ function Home(props) {
         </>
     );
 }
-
-export default Home;

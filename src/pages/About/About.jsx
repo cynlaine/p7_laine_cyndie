@@ -2,7 +2,7 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Banner from "../../components/Banner/Banner";
 import image from "../../assets/images/banner_about.png";
 
-function About() {
+export default function About() {
     return (
         <>
             <Banner
@@ -49,5 +49,3 @@ function About() {
         </>
     );
 }
-
-export default About;

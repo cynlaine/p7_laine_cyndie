@@ -1,4 +1,4 @@
-function Rating(props) {
+export default function Rating(props) {
     const value = props.value;
     const range = [1, 2, 3, 4, 5];
 
@@ -18,5 +18,3 @@ function Rating(props) {
         </>
     );
 }
-
-export default Rating;

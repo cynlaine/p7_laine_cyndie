@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrow_icon from "../../assets/icons/arrow_icon.svg";
 
-function Dropdown(props) {
+export default function Dropdown(props) {
     const [isOpen, setOpen] = useState(false);
     return (
         <div className="dropdown">
@@ -33,5 +33,3 @@ function Dropdown(props) {
         </div>
     );
 }
-
-export default Dropdown;

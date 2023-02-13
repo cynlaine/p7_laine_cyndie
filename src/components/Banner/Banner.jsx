@@ -1,4 +1,4 @@
-function Banner(props) {
+export default function Banner(props) {
     return (
         <div className={props.class}>
             <img src={props.image} alt={props.alt} />
@@ -6,5 +6,3 @@ function Banner(props) {
         </div>
     );
 }
-
-export default Banner;

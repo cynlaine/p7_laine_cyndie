@@ -2,20 +2,16 @@
 import arrow_icon from "../../assets/icons/arrow_icon.svg";
 import { useState } from "react";
 
-function Carousel({ pictures }) {
+export default function Carousel({ pictures }) {
     const [isActive, setActive] = useState(0);
 
-    function nextClick() {
-        {
-            setActive(isActive === pictures.length - 1 ? 0 : isActive + 1);
-        }
-    }
+    const nextClick = () => {
+        setActive(isActive === pictures.length - 1 ? 0 : isActive + 1);
+    };
 
-    function prevClick() {
-        {
-            setActive(isActive === 0 ? pictures.length - 1 : isActive - 1);
-        }
-    }
+    const prevClick = () => {
+        setActive(isActive === 0 ? pictures.length - 1 : isActive - 1);
+    };
 
     return (
         <section className="carousel">
@@ -40,5 +36,3 @@ function Carousel({ pictures }) {
         </section>
     );
 }
-
-export default Carousel;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logos/logo.png";
 
-function Header() {
+export default function Header() {
     return (
         <header className="header">
             <Link to="/">
@@ -18,5 +18,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;
