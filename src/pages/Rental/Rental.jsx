@@ -40,18 +40,8 @@ export default function Rentals(props) {
                     </div>
                 </header>
                 <div className="rental__content">
-                    <Dropdown title="Description" content="...">
-                        {data.description}
-                    </Dropdown>
-                    <Dropdown title="Equipements" content="...">
-                        <ul>
-                            {data.equipments.map((equipment, index) => (
-                                <li key={`${equipment}-${index}`}>
-                                    {equipment}
-                                </li>
-                            ))}
-                        </ul>
-                    </Dropdown>
+                    <Dropdown title="Description" content={data.description} />
+                    <Dropdown title="Equipements" content={data.equipments} />
                 </div>
             </section>
         </>

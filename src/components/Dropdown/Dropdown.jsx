@@ -27,9 +27,17 @@ export default function Dropdown(props) {
                     )}
                 </div>
             </div>
-            <div className={isOpen ? "content" : "content--hidden"}>
-                {props.children}
-            </div>
+            {Array.isArray(props.content) ? (
+                <ul className={isOpen ? "content" : "content--hidden"}>
+                    {props.content.map((equipment, index) => (
+                        <li key={`${equipment}-${index}`}>{equipment}</li>
+                    ))}
+                </ul>
+            ) : (
+                <div className={isOpen ? "content" : "content--hidden"}>
+                    {props.content}
+                </div>
+            )}
         </div>
     );
 }
