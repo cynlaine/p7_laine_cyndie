@@ -1,7 +1,3 @@
-export default function Tag({ tag, index }) {
-    return (
-        <li className="tag" key={`${tag}-${index}`}>
-            {tag}
-        </li>
-    );
+export default function Tag({ tag }) {
+    return <li className="tag">{tag}</li>;
 }
