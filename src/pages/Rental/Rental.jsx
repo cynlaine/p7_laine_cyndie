@@ -1,6 +1,7 @@
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Rating from "../../components/Rating/Rating";
 import Carousel from "../../components/Carousel/Carousel";
+import Tags from "../../components/Tag/Tags";
 import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
@@ -20,13 +21,7 @@ export default function Rentals(props) {
                         <p className="rental__header__location">
                             {data.location}
                         </p>
-                        <div className="rental__header__tags">
-                            <ul>
-                                {data.tags.map((tag, index) => (
-                                    <li key={`${tag}-${index}`}>{tag}</li>
-                                ))}
-                            </ul>
-                        </div>
+                        <Tags data={data.tags} />
                     </div>
                     <div className="rental__header__host-wrap">
                         <div className="rental__header__host">

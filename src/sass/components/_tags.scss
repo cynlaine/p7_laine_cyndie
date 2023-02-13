@@ -1,0 +1,20 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.tag {
+    background-color: $primary-color;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.3125rem 2.5rem;
+    border-radius: 0.625rem;
+    @include media-query(small) {
+        white-space: nowrap;
+        word-wrap: normal;
+        font-size: 10px;
+        padding: 4px 18px;
+        border-radius: 5px;
+    }
+}
