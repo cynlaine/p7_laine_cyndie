@@ -16,7 +16,10 @@ export default function Carousel({ pictures }) {
     return (
         <section className="carousel">
             {pictures.map((picture, index) => (
-                <div className="slide" key={index}>
+                <div
+                    className={isActive === index ? "slide" : "slide--hidden"}
+                    key={index}
+                >
                     {index === isActive && <img src={picture} alt="" />}
                 </div>
             ))}
