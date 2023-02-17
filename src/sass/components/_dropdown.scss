@@ -60,10 +60,9 @@
     font-size: 1.5rem;
     padding: 1.5rem 1rem;
     /* unshrink, then fade in */
-    transition: font-size 0.25s, margin 0.25s, padding 0.25s, opacity 0.5s 0.25s;
+    transition: font-size 0.25s, margin 0.25s, padding 0.25s, opacity 0.4s 0.25s;
     @include media-query(small) {
         font-size: 0.75rem;
-        line-height: 1.0625rem;
         padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
     }
     &--hidden {
@@ -74,12 +73,7 @@
         opacity: 0;
         padding: 0;
         /* fade out, then shrink */
-        transition: opacity 0.25s, font-size 0.5s 0.25s, margin 0.5s 0.25s,
-            padding 0.5s 0.25s;
-        @include media-query(small) {
-            font-size: 0.75rem;
-            line-height: 1.0625rem;
-            padding: 0rem 0.4375rem 0rem 0.8125rem;
-        }
+        transition: opacity 0.25s, font-size 0.4s 0.25s, margin 0.4s 0.25s,
+            padding 0.4s 0.25s;
     }
 }

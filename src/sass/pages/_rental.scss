@@ -104,16 +104,14 @@
                 @include media-query(small) {
                     height: 30px;
                     border-radius: 5px;
-                    font-size: 13px;
-                    padding: 0 7px 0 13px;
+                    font-size: 0.8125rem;
+                    padding: 0 0.4375rem 0 0.8125rem;
                 }
             }
             .content {
                 font-size: 1.125rem;
-                line-height: 1.625rem;
                 @include media-query(small) {
                     font-size: 0.75rem;
-                    line-height: 1.0625rem;
                     padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
                 }
             }
