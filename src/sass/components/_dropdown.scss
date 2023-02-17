@@ -33,6 +33,10 @@
     }
 }
 
+// &:checked + .content {
+//     height: 200px;
+// }
+
 .arrow {
     transition: transform 0.4s ease-in-out;
     @include media-query(small) {
@@ -51,23 +55,27 @@
     max-width: inherit;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
-    color: #ff6060;
+    color: $primary-color;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 2.125rem;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    overflow: hidden;
-    transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 1.5rem 1rem;
+    /* unshrink, then fade in */
+    transition: font-size 0.25s, margin 0.25s, padding 0.25s, opacity 0.5s 0.25s;
     @include media-query(small) {
         font-size: 0.75rem;
         line-height: 1.0625rem;
         padding: 1.25rem 0.4375rem 1.25rem 0.8125rem;
     }
     &--hidden {
-        height: 0;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 0;
+        margin: 0;
         opacity: 0;
-        padding: 0 1rem 0 1rem;
-        transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        padding: 0;
+        /* fade out, then shrink */
+        transition: opacity 0.25s, font-size 0.5s 0.25s, margin 0.5s 0.25s,
+            padding 0.5s 0.25s;
         @include media-query(small) {
             font-size: 0.75rem;
             line-height: 1.0625rem;
