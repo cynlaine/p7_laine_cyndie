@@ -3,13 +3,13 @@ import Rating from "../../components/Rating/Rating";
 import Carousel from "../../components/Carousel/Carousel";
 import Tags from "../../components/Tag/Tags";
 import { useParams } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import Error from "../Error/Error";
 
 export default function Rentals(props) {
     let { id } = useParams();
     let data = props.datas.find((data) => data.id === id);
     if (!data) {
-        return <Navigate to="/404" />;
+        return <Error />;
     }
     return (
         <>
