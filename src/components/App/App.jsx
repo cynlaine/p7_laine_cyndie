@@ -2,7 +2,7 @@ import Error from "../../pages/Error/Error";
 import Home from "../../pages/Home/Home";
 import About from "../../pages/About/About";
 import Rental from "../../pages/Rental/Rental";
-import datas from "../../datas/logements";
+import datas from "../../assets/datas/logements";
 
 import { Routes, Route } from "react-router-dom";
 
