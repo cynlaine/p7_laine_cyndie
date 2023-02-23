@@ -20,16 +20,18 @@ export default function Carousel({ pictures }) {
                     className={isActive === index ? "slide" : "slide--hidden"}
                     key={index}
                 >
-                    {index === isActive && <img src={picture} alt="" />}
+                    {index === isActive && (
+                        <img src={picture} alt="photographie du logement" />
+                    )}
                 </div>
             ))}
             {pictures.length > 1 ? (
                 <>
                     <button className="btn btn__next" onClick={nextClick}>
-                        <img src={arrow_icon} alt="" />
+                        <img src={arrow_icon} alt="bouton suivant" />
                     </button>
                     <button className="btn btn__prev" onClick={prevClick}>
-                        <img src={arrow_icon} alt="" />
+                        <img src={arrow_icon} alt="bouton précédent" />
                     </button>
                     <div className="counter">
                         {isActive + 1}/{pictures.length}

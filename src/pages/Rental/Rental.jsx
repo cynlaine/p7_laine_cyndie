@@ -31,7 +31,7 @@ export default function Rentals(props) {
                             <img
                                 className="rental__header__host__picture"
                                 src={data.host.picture}
-                                alt="host"
+                                alt="avatar de l'hôte"
                             ></img>
                         </div>
                         <div className="rental__header__rating">

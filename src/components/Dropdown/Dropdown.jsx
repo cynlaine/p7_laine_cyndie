@@ -13,7 +13,7 @@ export default function Dropdown(props) {
                             <img
                                 className="arrow arrow--up"
                                 src={arrow_icon}
-                                alt="bouton"
+                                alt="bouton ouvert"
                             />
                         </button>
                     ) : (
@@ -21,7 +21,7 @@ export default function Dropdown(props) {
                             <img
                                 className="arrow arrow--down"
                                 src={arrow_icon}
-                                alt="bouton"
+                                alt="bouton fermé"
                             />
                         </button>
                     )}
