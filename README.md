@@ -1,3 +1,10 @@
+# Projet 7 - Openclassrooms DW - Kasa
+**Prompt du projet :** Créez une application web de location immobilière avec React.
+
+Intégration d'une maquette à l'aide de React uniquement (librairies externes non autorisées)
+
+***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
